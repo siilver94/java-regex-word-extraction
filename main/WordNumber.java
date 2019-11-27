@@ -48,6 +48,6 @@ public class WordNumber {
 			int value = ((Integer) entry.getValue()).intValue();
 			System.out.println(entry.getKey() + " : " + value);
 		}
-		System.out.println("ÃÑ ´Ü¾î ¼ö : " + map.size());
+		System.out.println("총 단어 수 : " + map.size());
 	}
 }
