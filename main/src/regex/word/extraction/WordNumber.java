@@ -1,4 +1,4 @@
-package RegExp;
+package src.regex.word.extraction;
 
 import java.util.*;
 import java.io.*;
@@ -12,7 +12,7 @@ public class WordNumber {
 		try {
 
 			String s;
-			File file = new File("C:\\Little.txt");
+			File file = new File("/Users/hyunjongmoon/Downloads/little_prince_en.txt");
 			bReader = new BufferedReader(new FileReader(file));
 
 			while ((s = bReader.readLine()) != null) {
