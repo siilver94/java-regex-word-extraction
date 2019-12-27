@@ -1,4 +1,4 @@
-package src.regex.word.extraction;
+package regex.word.extraction;
 
 public class QuickSort {
 
