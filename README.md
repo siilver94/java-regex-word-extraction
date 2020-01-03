@@ -1,10 +1,9 @@
 # java-regex-word-extraction
 
-프로젝트 명
-Regular expression word extraction from txt file
+### 프로젝트 명 : Regular expression word extraction from txt file
 
 
-프로젝트 인원
+### 프로젝트 인원
 siilver94
 hyunjongmoon
 프로젝트 목적
