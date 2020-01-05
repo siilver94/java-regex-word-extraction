@@ -1,31 +1,29 @@
-package RegExp;
-
 import java.util.*;
 import java.io.*;
 import java.util.regex.*;
 
-public class WordNumber {
+public class NumberOfPreposition {
 	public static void main(String[] args) {
 
 		BufferedReader bReader = null;
-		HashMap map = new HashMap();
+		HashMap hashMap = new HashMap();
 		try {
 
-			String s;
-			File file = new File("C:\\Little.txt");
+			String readStr;
+			File file = new File("D:\\Little.txt");
 			bReader = new BufferedReader(new FileReader(file));
 
-			while ((s = bReader.readLine()) != null) {
-				Pattern p = Pattern.compile("\\b(to|in|with|of|by|about|at|on|for|out|off|over|up)\\b");
-				Matcher m = p.matcher(s);
-				while (m.find()) {
-					String[] data = { m.group() };
-					for (int i = 0; i < data.length; i++) {
-						if (map.containsKey(data[i])) {
-							Integer value = (Integer) map.get(data[i]);
-							map.put(data[i], value + 1);			
+			while ((readStr = bReader.readLine()) != null) {
+				Pattern pattern = Pattern.compile("\\b(to|in|with|of|by|about|at|on|for|out|off|over|up)\\b");
+				Matcher regexStr = pattern.matcher(readStr);
+				while (regexStr.find()) {
+					String[] regexArray = { regexStr.group() };
+					for (int i = 0; i < regexArray.length; i++) {
+						if (hashMap.containsKey(regexArray[i])) {
+							Integer value = (Integer) hashMap.get(regexArray[i]);
+							hashMap.put(regexArray[i], value + 1);
 						} else {
-							map.put(data[i], 1);
+							hashMap.put(regexArray[i], 1);
 						}
 					}
 
@@ -41,16 +39,15 @@ public class WordNumber {
 				e.printStackTrace();
 			}
 		}
-		Iterator it = map.entrySet().iterator();
+		Iterator iterator = hashMap.entrySet().iterator();
 
-		while (it.hasNext()) {
-			Map.Entry entry = (Map.Entry) it.next();
+		while (iterator.hasNext()) {
+			Map.Entry entry = (Map.Entry) iterator.next();
 			int value = ((Integer) entry.getValue()).intValue();
 			System.out.println(entry.getKey() + " : " + value);
 		}
-		System.out.println("전치사의  갯수 : " + map.size());
+		System.out.println("전치사의  갯수 : " + hashMap.size());
 	}
 }
-
 
 
