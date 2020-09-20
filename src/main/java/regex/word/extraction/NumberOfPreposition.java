@@ -49,5 +49,3 @@ public class NumberOfPreposition {
 		System.out.println("전치사의  갯수 : " + hashMap.size());
 	}
 }
-
-
