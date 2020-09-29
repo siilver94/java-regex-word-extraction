@@ -56,5 +56,3 @@ public class TotalWordNumber {
 		System.out.println("총 단어 수 : " + hashMap.size());
 	}
 }
-
-
