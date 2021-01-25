@@ -4,7 +4,6 @@ Regular expression word extraction from txt file
 
 ## 프로젝트 인원
 
-
 [siilver94](https://github.com/siilver94)
 
 [hyunjongmoon](https://github.com/hyunjongmoon)
