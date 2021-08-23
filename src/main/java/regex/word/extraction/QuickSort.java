@@ -25,5 +25,3 @@ public class QuickSort {
 			sort(data, left, r);
 	}	
 }
-
-
