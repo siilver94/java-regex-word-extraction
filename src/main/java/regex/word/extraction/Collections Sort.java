@@ -33,7 +33,6 @@ public class CollectionsSort {
                 int comparision = (o1.getValue() - o2.getValue()) * -1;
 
                 return comparision == 0 ? o1.getKey().compareTo(o2.getKey()) : comparision;
-
             }
 
         });
