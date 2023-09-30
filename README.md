@@ -1,4 +1,4 @@
-# 프로젝트 명 : java-regex-word-extraction
+# 프로젝트 명 : Java Regex Word Extraction
 
 <br/>
 
